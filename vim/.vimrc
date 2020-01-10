@@ -1,3 +1,12 @@
+filetype plugin indent on
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+
 " BASIC SETUP
 
 " Ctrl-N twice in normal mode to toggle line number
@@ -35,3 +44,7 @@ let g:netrw_banner=0		" Removes banner
 " let g:netrw_browse_split=4	" Opens file in a previous window
 " let g:netrw_altv=1		" Open splits to right
 " let g:netrw_winsize=25		" Sets width of explorer to be 25% of page
+
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
