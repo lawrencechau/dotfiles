@@ -45,6 +45,9 @@ let g:netrw_banner=0		" Removes banner
 " let g:netrw_altv=1		" Open splits to right
 " let g:netrw_winsize=25		" Sets width of explorer to be 25% of page
 
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-set laststatus=2
-set t_Co=256
+" POWERLINE
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+
+set laststatus=2 

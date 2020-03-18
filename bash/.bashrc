@@ -122,9 +122,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Powerline
-if [ -f `which powerline-daemon` ]; then
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   powerline-daemon -q
   POWERLINE_BASH_CONTINUATION=1
   POWERLINE_BASH_SELECT=1
-  . /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+  source /usr/share/powerline/bindings/bash/powerline.sh
 fi
