@@ -19,3 +19,7 @@ let g:netrw_browse_split=4      " Open in prior window
 let g:netrw_altv=1              " Open splits to the right
 let g:netrw_winsize=75          " Splits 25/75 on split
 let g:netrw_liststyle=3         " tree view
+
+" Theme
+" https://github.com/vim/vim/tree/master/runtime/colors
+colorscheme peachpuff           
